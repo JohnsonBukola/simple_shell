@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
- * **parse_input_string - splits the string entered by the user
+ * **parse_input_str - splits string entered by user
  * @buffer: string to be split
  * Return:split string
  */
 
-char **parse_input_string(char *buffer)
+char **parse_input_str(char *buffer)
 {
 	char **cmd = NULL;
 	char *token, *delimeter = " \n";

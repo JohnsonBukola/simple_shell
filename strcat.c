@@ -1,18 +1,18 @@
 #include "shell.h"
 /**
- * *_strncat - concatenates two strings
+ * *_str_cat - it concatenates two strings
  *
  * @dest: resulting string
- * @src: source string
+ * @src: source or original string
  * @n: string length
- * Return: pointer to dest
+ * Return: pointer to destination
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_str_cat(char *dest, char *src, int n)
 {
 	int i, m;
 
-	m = string_length(dest);
+	m = str_len(dest);
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[m + i] = src[i];

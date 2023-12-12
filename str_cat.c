@@ -2,16 +2,16 @@
 /**
  * *_strcat - concatenates two strings
  *
- * @dest: resulting string
- * @src: source string
- * Return: pointer to dest
+ * @dest: the resulting string
+ * @src: source or original string
+ * Return: pointer to destination
  */
 
 char *_strcat(char *dest, char *src)
 {
 	int i, n;
 
-	n = string_length(dest);
+	n = str_len(dest);
 	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
 		dest[n + i] = src[i];

@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
- * print_environ - prints all the environment variables.
+ * print_env - it prints all variables of environment
  * Return: Nothing.
  */
 
-void print_environ(void)
+void print_env(void)
 {
 	int i;
 

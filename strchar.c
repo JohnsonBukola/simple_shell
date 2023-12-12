@@ -1,11 +1,11 @@
 #include "shell.h"
 /**
-**_strchr - locates a character in a string
+**str_chr - finds a character in a string
 *@s: string to be checked
 *@c: character to be located
 *Return: pointer to the first of NULL if no character found
 */
-char *_strchr(char *s, char c)
+char *str_chr(char *s, char c)
 {
 while (*s != '\0')
 {

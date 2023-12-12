@@ -1,8 +1,8 @@
 #include "shell.h"
 /**
-*_strcmp - compares two string
-*@s1: first string
-*@s2: second string
+*_strcmp - this compares two string
+*@s1: the first string
+*@s2: the second string
 *Return: Always 0
 */
 int _strcmp(char *s1, char *s2)

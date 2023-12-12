@@ -1,10 +1,10 @@
 #include "shell.h"
 /**
-*path_search - makes a complete path
-*@cmd: command to make complete path
+*search_path - this makes a full path
+*@cmd: command to make full path
 *Return: complete path
 */
-char *path_search(char *cmd)
+char *search_path(char *cmd)
 {
 char *path = NULL, *token = NULL, ch = '/';
 char *dirs[1024];
@@ -28,7 +28,7 @@ while (dirs[i] != NULL)
 chdir(dirs[i]);
 if (stat(cmd, &sb) == 0)
 {
-dirs[i] = _strncat(dirs[i], &ch, 1);
+dirs[i] = _str_cat(dirs[i], &ch, 1);
 cmd = _strcat(dirs[i], cmd);
 break;
 }
